@@ -296,6 +296,124 @@ section > p {
 .timeline_section {
   background-color: #F2F2F2;
   height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.timeline_column-left { 
+  float: left; 
+  width: 30%; 
+  height: 100%;
+  padding-left: 10%;
+}
+
+.timeline_column-right { 
+  float: right; 
+  width: 30%; 
+  height: 100%;
+  padding-right: 10%;
+}
+
+.timeline_column-center { 
+  display: inline-block; 
+  width: 10%; 
+  height: 100%;
+}
+
+.timeline-graphic {
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+}
+
+.timeline-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #D8D8D8;
+  border: 4px solid #979797;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline-line {
+  width: 5px;
+  height: 95px;
+  background-color: #979797;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline-info-bubble {
+  height: auto;
+  width: 30%;
+  background: white;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.bubble-left {
+  margin-left: auto;
+  margin-right: auto; 
+  display: block;
+}
+
+.top-left-bubble {
+  margin-top: 100px;
+}
+
+.bottom-left-bubble {
+  margin-top: 380px;
+}
+
+.timeline-info-bubble > h3 {
+  text-align: left;
+  font-family: "Fjalla One";
+  font-size: 150%;
+  padding: 10px;
+  color: #922826;
+}
+
+.timeline-info-bubble > p {
+  text-align: left;
+  font-family: "ralewaythin";
+  padding: 10px;
+  color: #922826;
+}
+
+.top-right-bubble {
+  margin-top: 240px;
+}
+
+.bottom-right-bubble {
+  margin-top: 620px;
+}
+
+.bubble-right {
+  margin-left: auto;
+  margin-right: auto; 
+  display: block;
+}
+
+.timeline-info-bubble:before {
+  content:"";
+  position: absolute;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+}
+
+.bubble-left:before {
+  left: 100%;
+  border-left: 26px solid white;
+}
+
+.bubble-right:before {
+  right: 100%;
+  border-right: 26px solid white;
 }
 
 .projects_section {
