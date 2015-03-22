@@ -234,6 +234,7 @@ section > p {
   font-size: 250%; 
   padding: 15%;
   padding-bottom: 0;
+  font-family: "Fjalla One";
 }
 
 .about_section-column-right > div > p {
@@ -244,7 +245,52 @@ section > p {
 
 .skills_section {
   background-color: #E87E6C;
-  height: 100vh;
+  height: 70vh;
+  color: white;
+  display: table;
+}
+
+.skills_section-item {
+  font-family: "ralewaylight";
+  font-size: 100%; 
+  background-color: #D8D8D8;
+  color: black;
+  display: inline-block;
+  padding: 1%;
+  border-radius: 78px;
+  float: left;
+  margin: .25%;
+  margin-top: .5%;
+}
+
+.skills_group-tech, .skills_group-art {
+  width: 100%;
+  float: right;
+  display: block;
+  position: relative;
+  padding-left: 10%;
+  margin: 2%;
+}
+
+.skills_group-tech > h2, .skills_group-art > h2 {
+  width: 20%;
+  float: left;
+  font-size: 250%;
+  padding-left: 10%;
+  font-family: "Fjalla One";
+}
+
+.skills_group-tech > div, .skills_group-art > div {
+  width: 50%;
+  float: right;
+  border-left: 2px solid white;
+  padding-left: 10%;
+  height: 100%;
+}
+
+.skills_section-content {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .timeline_section {
