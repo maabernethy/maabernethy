@@ -4,6 +4,7 @@
 	<link rel="stylesheet" href="icons/font-awesome/css/font-awesome.min.css">
 	<script language="javascript" type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/noframework.waypoints.min.js"></script>
+	<script src="js/jquery.form.min.js"></script>
 	<script src="js/script.js"></script>
 	<title> Marin A. - Personal Website </title>
 	<meta name="author" content="Marin Abernethy">
@@ -74,13 +75,13 @@
 						<li class="skills_section-item">Java</li>
 						<li class="skills_section-item">Android</li>
 						<li class="skills_section-item">TDD</li>
-						<li class="skills_section-item">Google Scripts</li>
+						<li class="skills_section-item">Vim</li>
 						<li class="skills_section-item">Agile Methidilogy</li>
 						<li class="skills_section-item">HTML</li>
 						<li class="skills_section-item">CSS</li>
 						<li class="skills_section-item">ERB</li>
 						<li class="skills_section-item">Version Controler (Git)</li>
-						<li class="skills_section-item">Vim</li>
+						<li class="skills_section-item">Google Scripts</li>
 						<li class="skills_section-item">App Inventor</li>
 						<li class="skills_section-item">Object Oriented Programming</li>
 						<li class="skills_section-item">REST</li>
@@ -168,6 +169,32 @@
 	
 	<section id="contact" class="contact_section">
 		<h2>Say Hello</h2>
+		<form id="contact_form" class="contact_form" name="contact" method="post" novalidate="novalidate">
+	    	<fieldset>
+	    		<div class="name_container">
+	    			<div class="first_name_container">
+			        	<label for="first_name" id="first_name">First Name</label>
+			        	<input type="text" name="first_name" id="first_name" size="30" value="">
+			        </div>
+
+			        <div class="last_name_container">
+			        	<label for="last_name" id="last_name">Last Name</label>
+			        	<input type="text" name="last_name" id="last_name" size="30" value="">
+			        </div>
+		    	</div>
+		        
+		        <label for="email" id="email">Email</label>
+		        <input type="text" name="email" id="email" size="30" value="">
+
+		        <label for="subject" id="subject">Subject</label>
+		        <input type="text" name="subject" id="subject" size="30" value="">
+		        
+		        <label for="Message" id="message">Message</label>
+		        <textarea name="message" id="message"></textarea>
+		        
+		        <input class="submit-button" id="submit" type="submit" name="submit" value="Send">
+	   		</fieldset>
+		</form>
 	</section>
 
 	<footer class="footer">

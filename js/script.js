@@ -36,5 +36,21 @@ $(document).ready(function() {
     		}
   		},
   		offset: 60
-	})
+	});
+
+    $('#contact_form').submit(function() { 
+        $('#contact_form').ajaxSubmit({
+            type:"POST",
+            data: $('#contact_form').serialize(),
+            url:"process.php",
+            success: function() {
+                console.log('success');
+            },
+            error: function() {
+                console.log('error');
+            }
+        });
+
+        return false;   
+    }); 
 });
