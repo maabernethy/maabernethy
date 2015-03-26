@@ -12,6 +12,10 @@ header, menu, nav, section {
   /*border: 1px dotted red;**/
 }
 
+ul {
+  text-align: left;
+}
+
 h1 {
   font-family: "Fjalla One";
   font-size: 500%;
@@ -431,10 +435,51 @@ section > p {
   height: 100vh;
 }
 
+.contact_section-column-left {
+  display: inline;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.contact_section-column-right {
+  display: inline;
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+.contact_section-icons > li {
+  list-style-type: none;
+  display: block;
+  margin: 0; 
+  padding: 0;
+}
+
+.contact_section-icons {
+  margin: 0; 
+  padding: 0;
+  text-align: left !important;
+  float: left;
+}
+
+.contact_section-icons > li > a {
+  color: white;
+  text-decoration: none;
+}
+ 
+.contact_section-icons > li > a > i {
+  color: white;
+  display: inline-block;
+}
+
+.contact_section-icons > li > a > h3 {
+  display: inline-block;
+}
+
 .contact_form > fieldset {
   border: 0;
   float: left;
-  width: 40%;
   margin-left: 5%;
   margin-top: 5%;
 }
